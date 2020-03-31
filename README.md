@@ -28,4 +28,4 @@ router 路由文件
 默认引入的文件是全局 存在作用域问题
 1. 保证类名不重复  用BEM命名法  button-error-small   
  2. 样式模块化
-  3. css in js component-style
+  <!-- 3. css in js component-style --> 需要插件不考虑
