@@ -23,9 +23,11 @@ common 公用图片资源
 store 全局状态管理
 router 路由文件
 
-#### 样式 less
+#### 样式 less npm install less@2.7.3
 
 默认引入的文件是全局 存在作用域问题
 1. 保证类名不重复  用BEM命名法  button-error-small   
  2. 样式模块化
   <!-- 3. css in js component-style --> 需要插件不考虑
+
+#### antd 3.26.13
