@@ -31,3 +31,10 @@ router 路由文件
   <!-- 3. css in js component-style --> 需要插件不考虑
 
 #### antd 3.26.13
+全局引入 
+ 引入全部的样式文件 index.js 
+ import 'antd/dist/antd.css'
+ import {Button} from antd 
+
+ 按需引入
+npm install   babel-plugin-import
