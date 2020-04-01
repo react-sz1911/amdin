@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {HashRouter,Route} from 'react-router-dom';
 import Admin from './pages/Admin';
 import Login from './pages/Login';
-import User from './pages/User'
+import User from './pages/User';
+import Goods from './pages/Goods'
 
 // const Login = loadalbe(()=>import('./pages/Login'))
 // const Admin = loadalbe(()=>import('./pages/Admin'))
@@ -15,7 +16,7 @@ class App extends Component{
             return(
               <Admin>
                 <Route path='/admin/user' component={User}></Route>
-
+                <Route path='/admin/user' component={Goods}></Route>
               </Admin>
             )
           }}></Route>
