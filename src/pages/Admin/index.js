@@ -9,12 +9,14 @@ class Admin extends Component {
     render(){
         return ( 
             <Layout className={style.wrapper}>
+
               {/* 侧边栏 */}
-            <Sider>
+            <Sider style={ {background:'#fff'} }>
               <div className="logo" />
               <CustomNav></CustomNav>
             </Sider>
            
+
             <Layout >
               <Header style={ {background:'#fff'} }>
                 <HeaderNav></HeaderNav>
@@ -24,6 +26,7 @@ class Admin extends Component {
               </Content>
               <Footer >Ant Design ©2018 Created by Ant UED</Footer>
             </Layout>
+            
           </Layout>
            );
      }

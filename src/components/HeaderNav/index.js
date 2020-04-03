@@ -32,8 +32,8 @@ class HeaderNav extends Component {
   state = {  }
   render() { 
     return ( 
-      <div >
-        这里是头部导航
+      <div>
+
         <Dropdown overlay={createMenu(userdata)}>
           <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
             Hover me <Icon type="down" />
