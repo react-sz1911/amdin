@@ -7,7 +7,7 @@ export default[
   },
   {
    key:'2',
-   title:'用户管理',
+   title:'表单页',
    icon:'user',
    path:'/admin/user',
    children:[
@@ -25,7 +25,7 @@ export default[
   },
   {
     key:'3',
-    title:"商品管理",
+    title:"列表页",
     icon:'goods',
     path:'/admin/goods',
     children:[
@@ -43,35 +43,6 @@ export default[
   },
   {
     key:'4',
-    title:"数据统计",
-    icon:'echarts',
-    path:'/admin/echarts',
-    children:[
-      {
-        key:'4-1',
-        title:'饼状图',
-        path:'/admin/echarts/pie'
-      },
-      {
-        key:'4-2',
-        title:'折线图',
-        path:'/admin/echarts/line'
-      },
-      {
-        key:'4-3',
-        title:'柱状图',
-        path:'/admin/echarts/bar'
-      },
-    ]
-  },
-  {
-    key:'8',
-    title:"管理员",
-    icon:'administrator',
-    path:'/admin/administrator'
-  },
-  {
-    key:'9',
     title:"设置",
     icon:'set',
     path:'/admin/set'
