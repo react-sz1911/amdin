@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import { Menu, Dropdown, Icon } from 'antd';
-import style from './index.module.less'
+
 
 let userdata =[
   {name:'个人中心',icon:'user',divider:false},
@@ -32,7 +32,7 @@ class HeaderNav extends Component {
   state = {  }
   render() { 
     return ( 
-      <div className={style.box}>
+      <div >
         这里是头部导航
         <Dropdown overlay={createMenu(userdata)}>
           <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>

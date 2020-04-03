@@ -2,36 +2,15 @@ import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom'
 import { Menu } from 'antd';
 import menuList from './menulist'
-// import {
-//   HomeOutlined,
-//   SettingFilled,
-//   UserOutlined,
-//   RadarChartOutlined,
-// } from '@ant-design/icons';
 const { SubMenu } = Menu;
 
 function handleClick(e) {
-  // 点击获取跳转路径通过编程式导航实现跳转
   console.log(e)
   let {path} = e.item.props 
   this.props.history.replace(path)
 }
 class CustomNav extends Component {
   renderIcon(icon){
-    // switch (icon) {
-    //   case 'home':
-    //     return <HomeOutlined/>
-    //     break;
-    //   case 'set':
-    //     return <SettingFilled/>
-    //     break;
-    //   case 'user':
-    //     return <UserOutlined/>
-    //     break;
-    //   default:
-    //     return <RadarChartOutlined />
-    //     break;
-    // }
   }
   renderItem(data){
     return data.map((item,index)=>{
