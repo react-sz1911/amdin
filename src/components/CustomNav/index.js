@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {withRouter} from 'react-router-dom'
 import { Menu } from 'antd';
 import menuList from './menulist'
+
 const { SubMenu } = Menu;
 
 function handleClick(e) {
@@ -10,8 +11,6 @@ function handleClick(e) {
   this.props.history.replace(path)
 }
 class CustomNav extends Component {
-  renderIcon(icon){
-  }
   renderItem(data){
     return data.map((item,index)=>{
       if(item.children){
@@ -19,19 +18,19 @@ class CustomNav extends Component {
           <SubMenu key={item.key} title={(()=>{
             return(
               <span>
-                {this.renderIcon(item.icon)}
                 {item.title}
               </span>
             )
           })()}>
-            {/* 如果里面还有2级 将渲染的方法在调用一遍 */}
+            {/* 2级递归*/}
             {this.renderItem(item.children)}
           </SubMenu>
         )
       }else{
+        // 无children 
         return(
         <Menu.Item key={item.key} path={item.path}>
-          {this.renderIcon(item.icon)}
+
           {item.title}
         </Menu.Item>
         )
