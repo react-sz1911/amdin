@@ -22,6 +22,7 @@ class Admin extends Component {
                 <HeaderNav></HeaderNav>
               </Header>
               <Content >
+                admin容器页面
                 {this.props.children}
               </Content>
               <Footer >Ant Design ©2018 Created by Ant UED</Footer>
